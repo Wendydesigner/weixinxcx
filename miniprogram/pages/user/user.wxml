@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<view class="user_container">
+    <view class="user_top">
+        <view class="user_userinfo">
+            <button 
+            open-type="getUserInfo" 
+            bindgetuserinfo="onGetUserInfo"
+            class="userinfo-avatar"
+            style="background-image: url({{avatarUrl}})"
+            size="default"
+            ></button>
+            <view class="userinfo-nickname-wrapper">
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            </view>
+        </view>
+        <view class="user_list">
+            <view class="user_list_item">
+                <view class="user_list_item_number">10</view>
+                <view class="user_list_item_view">关注</view>
+            </view>
+            <view class="user_list_item">
+                <view class="user_list_item_number">10</view>
+                <view class="user_list_item_view">粉丝</view>
+            </view>
+            <view class="user_list_item">
+                <view class="user_list_item_number">10</view>
+                <view class="user_list_item_view">收藏</view>
+            </view>
+        </view>
+    </view>
+    <view class="setting_list">
+        <view class="setting_list_title_box">
+            <view class="setting_list_title">日常管理</view>
+            <view class="setting_list_more">
+                <view>更多</view>
+                <mp-icon icon="arrow" size="{{10}}" class="setting_list_item_text_icon"></mp-icon>
+            </view>
+        </view>
+        <view class="setting_list_box">
+            <view wx:for-index="indexItem" wx:for-item="item" wx:for="{{settingList}}" wx:key="indexItem" class="setting_list_item">
+                <view class="setting_list_item_icon">
+                    <mp-icon icon="{{item.icon}}"></mp-icon>
+                </view>
+                <view class="setting_list_item_text">{{item.text}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="recommonend_swiper_list">
+        <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
+            <block wx:for="{{background}}" wx:key="*this">
+                <swiper-item>
+                    <image class="swiper-item" src="{{item}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</view>

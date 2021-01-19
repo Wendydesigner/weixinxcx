@@ -1,0 +1,15 @@
+<import src="./video_item.wxml"></import>
+<view class="video_list_container">
+    <view class="video_list_box">
+        <view class="left_video_list_box">
+            <view wx:for-index="itemIndex" wx:for="{{leftVideoList}}" wx:for-item="item" wx:key="itemIndex" class="video_item_container">
+                <template is="video_item" data="{{item}}"></template>
+            </view>
+        </view>
+        <view class="right_video_list_box">
+            <view wx:for-index="itemIndex" wx:for="{{rightVideoList}}" wx:for-item="item" wx:key="itemIndex" class="video_item_container">
+                <template is="video_item" data="{{item}}"></template>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<import src="./title.wxml"/>
+<template name="pictures_box">
+    <template is="title" data="{{item, itemIndex}}"></template>
+    <view class="pictures">
+        <view class="picture_item" wx:key="pictureIndex" wx:for-index="pictureIndex"  wx:for="{{item.images.pictures}}" wx:for-item="pictureItem">
+            <image src="{{pictureItem}}"/>
+        </view>
+    </view>
+</template>

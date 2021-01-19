@@ -1,0 +1,163 @@
+/**index.wxss**/
+.feed_page_container {
+  background: #e0e0e0;
+  padding: 0;
+}
+.page_bd {
+  position: relative;
+}
+.searchbar-result{
+  position: absolute;
+  top: 48px;
+  z-index: 100;
+  width: 100%;
+  margin-top: 0;
+  font-size: 14rpx;
+  background: #EDEDED;
+}
+.searchbar-result .weui-cell__bd{
+  padding: 2px 0 2px 20px;
+  color: #666;
+}
+.searchbar-result:before{
+  display: none;
+}
+.time-container {
+    position: relative;
+  }
+  .time-card {
+      background: pink;
+      width: 750rpx; 
+      background: #fff;
+      margin-bottom: 10rpx;
+  }
+  .time-card-top {
+    margin-bottom: 20rpx;
+  }
+  .time-card-content-box {
+    padding: 10rpx 20px;
+    font-size: 10rpx;
+  }
+  .time-card-title {
+    margin-top: 15rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .time-card-title-text {
+    font-size: 32rpx;
+    line-height: 36rpx;
+  }
+  .time-card-sub {
+    color: #989898;
+    font-size: 26rpx;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .time-card-avatar-box {
+    float: left;
+    margin-top: -5rpx;
+    width: 40rpx;
+    margin-right: 15rpx;   
+  }
+  .time-card-avatar {
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 40rpx;
+  }
+  .time-card-action {
+    flex-shrink: 0;
+    display: flex;
+    width: 40rpx;
+    justify-content: flex-end;
+  }
+  .time-card-bottom {
+    display: flex;
+    padding: 5rpx 20px; 
+  }
+  .time-card-tag {
+    margin-right: 15rpx;
+    font-size: 24rpx;
+    line-height: 24rpx;
+    color: #10aeff;
+  }
+  .time-card-tag:first-child {
+    color: #999;
+
+  }
+  .time-card-tag:last-child {
+    color: #f5907d;
+  }
+  .big_picture {
+    width: 100%;
+    padding-bottom: 40%;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    border-radius: 10px;
+  }
+  .big_picture image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .pictures {
+    display: flex;
+    flex-direction: row;
+  }
+  .pictures .picture_item {
+    flex: 1;
+    border-radius: 10rpx;
+  }
+  .pictures .picture_item:last-child {
+    flex: 0;
+  }
+  .pictures .picture_item image{
+    width: 210rpx;
+    height: 140rpx;
+    border-radius: 10rpx;
+  }
+  .right_picture_box {
+    display: flex;
+  }
+  .right_picture_box .time-card-top {
+    width: 66.667%;
+    flex: 2;
+    margin-right: 10rpx;
+  }
+  .right_picture_box .time-card-top .time-card-avatar-box{
+    margin-top: 20rpx;
+  }
+  .right_picture_box .right_picture {
+    flex: 1;
+  }
+  .right_picture_box .right_picture_container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.67%;
+    overflow: hidden;
+    border-radius: 10rpx;
+  }
+
+.right_picture_box .right_picture_image {
+  width: 100%;
+  height: 160rpx;
+  border-radius: 10rpx;
+}
+.right_picture_box .time-card-title {
+  line-height: 38rpx;
+  white-space: unset;
+}
+.right_picture_box .time-card-title-text {
+  line-height: 38rpx;
+  display: -webkit-box;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

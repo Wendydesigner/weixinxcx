@@ -1,0 +1,12 @@
+<template name="title">
+    <view class="time-card-top">
+        <view class="time-card-avatar-box" wx:if="{{item.user.avatar_large}}">
+            <image src="{{item.user.avatar_large}}" class="time-card-avatar"></image>
+        </view>
+        <navigator url="../entry/entry?index={{itemIndex}}" class="time-card-title-nav">
+            <view class="time-card-title">
+                <text class="time-card-title-text">{{item.title}}</text>
+            </view>
+        </navigator>
+    </view>
+</template>

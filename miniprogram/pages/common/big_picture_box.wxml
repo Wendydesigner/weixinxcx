@@ -1,0 +1,7 @@
+<import src="./title.wxml"/>
+<template name="big_picture_box">
+    <template is="title" data="{{item, itemIndex}}"></template>
+    <view class="big_picture">
+        <image src="{{item.images.big_picture}}" class="big_picture_image" />
+    </view>
+</template>

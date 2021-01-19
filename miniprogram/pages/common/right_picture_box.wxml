@@ -1,0 +1,10 @@
+
+<import src="./title.wxml"/>
+<template name="right_picture_box">
+    <template is="title" data="{{item, itemIndex}}"></template>
+    <view class="right_picture">
+        <view class="right_picture_container">
+            <image src="{{item.images.picture}}" class="right_picture_image" />
+        </view>
+    </view>
+</template>

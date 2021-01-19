@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<import src="../common/picture_box.wxml" />
+<import src="../common/title.wxml"/>
+<view class="feed_page_container">
+    <view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    </view>
+    <view class="time-container">
+        <view class="time-card" wx:key="itemIndex" wx:for-index="itemIndex"  wx:for="{{timeLine}}">
+            <view class="time-card-content-box">
+                <view wx:if="{{item.images}}">
+                    <template is="picture_box" data="{{item, itemIndex}}"/>
+                </view>
+                <view wx:else>
+                    <template is="title" data="{{item, itemIndex}}"></template>
+                    <view class="time-card-sub" wx:if="{{item.content}}">
+                        <text>{{item.content}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="time-card-bottom" data-index="{{itemIndex}}" bindtap="touchEntry">
+                <view class="time-card-tags">
+                    <text class="time-card-tag" wx:for="{{item.tagsTitleArray}}" wx:key="tagIndex" wx:for-index="tagIndex" wx:for-item="tag" wx:if="{{tagIndex < 3}}">{{tag}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

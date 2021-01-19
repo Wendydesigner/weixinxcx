@@ -1,0 +1,16 @@
+<import src="./big_picture_box.wxml" />
+<import src="./pictures_box.wxml" />
+<import src="./right_picture_box.wxml" />
+
+
+<template name="picture_box">
+    <view wx:if="{{item.images.big_picture}}" class="big_picture_box">
+        <template is="big_picture_box" data="{{item, itemIndex}}"></template>
+    </view>
+    <view wx:elif="{{item.images.pictures}}" class="picture_box">
+        <template is="pictures_box" data="{{item, itemIndex}}"></template>
+    </view>
+    <view wx:else class="right_picture_box">
+        <template is="right_picture_box" data="{{item, itemIndex}}"></template>
+    </view>
+</template>

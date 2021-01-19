@@ -1,0 +1,125 @@
+/**index.wxss**/
+
+page {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+.user_container {
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-right: none;
+    background: #fff;
+}
+.user_top {
+    padding: 40rpx;
+    transition: all 300ms ease;
+    background: linear-gradient(to right, #cd4, #cb4);
+}
+.user_userinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userinfo {
+    padding-left: 120rpx;
+}
+
+.userinfo-avatar {
+    width: 120rpx;
+    height: 120rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: white;
+    border: 2rpx solid #fff;
+
+}
+
+.userinfo-avatar[size] {
+    width: 120rpx;
+}
+  
+  
+.userinfo-avatar:after {
+    border: none;
+}
+  
+.userinfo-nickname {
+    font-size: 38rpx;
+    color: #fff;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 10px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0)
+}
+
+.userinfo-nickname::after {
+    border: none;
+}
+
+.userinfo-nickname-wrapper {
+    flex: 1;
+}
+.user_list {
+    display: flex;
+    padding: 20rpx 20rpx;
+    text-align: center;
+    color: #fff;
+}  
+.user_list_item {
+    flex: 1;
+    text-align: center;
+}
+.setting_list {
+    border-top: 20rpx solid #f6f6f6;
+    padding: 20rpx;
+    border-bottom: 20rpx solid #f6f6f6;
+}
+.setting_list_title_box {
+    border-bottom: 1rpx solid #f6f6f6;
+    display: flex;
+    padding-bottom: 20rpx;
+    justify-content: space-between;
+}
+.setting_list_item_text_icon {
+    margin-top: -3rpx;
+    margin-left: 10rpx;
+}
+.setting_list_more {
+    display: flex;
+}
+
+.setting_list_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.setting_list_item {
+    width: 237rpx;
+    text-align: center;
+    padding: 20rpx 0;
+}
+.setting_list_item_text {
+    padding-top: 10rpx;
+}
+.recommonend_swiper_list {
+    padding: 20rpx;
+    background: #fff;
+    border-bottom: 20rpx solid #f6f6f6;
+}
+.recommonend_swiper_list swiper {
+    height: 120px;
+}
+.recommonend_swiper_list image{
+    display: block;
+    height: 120px;
+    width: 100%;
+    border-radius: 15rpx;
+}
+

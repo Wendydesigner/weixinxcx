@@ -1,0 +1,22 @@
+<template name="video_item">
+    <navigator url="{{item.src}}">
+        <view class="video_item_image">
+            <image src="{{item.imgSrc}}"/>
+        </view>
+        <view class="video_image_bottom">
+            <view class="video_item_title">
+                <text class="video_item_title_text">{{item.title}}</text>
+            </view>
+            <view class="video_line_bottom">
+                <view class="video_item_user">
+                    <image src="{{item.avatar}}" alt="" wx:if="{{item.avatar}}"/>
+                    <text class="video_item_nickname">{{item.nickname}}</text>
+                </view>
+                <view class="video_item_playcount">
+                    <image src="../../images/play.png" />
+                    <text class="video_item_playcount_text">{{item.playcount}}</text>
+                </view>
+            </view>
+        </view>
+    </navigator>
+</template>
